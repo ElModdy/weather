@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="309.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meteo.FXMLDocumentController">
+    <children>
+      <ListView fx:id="placesList" layoutX="14.0" layoutY="50.0" onMouseClicked="#onPlaceSelected" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="desc" layoutX="63.0" layoutY="260.0" />
+      <Label fx:id="temp" layoutX="59.0" layoutY="287.0" />
+      <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" onKeyReleased="#onKeyTyped" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="15.0" layoutY="260.0" text="Temp:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="287.0" prefHeight="17.0" prefWidth="33.0" text="Desc:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
